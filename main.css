@@ -1,5 +1,15 @@
+/* general settings */
+strong {
+  font-weight: 600;
+}
+
+
+/* end */
 body {
     font-family: 'Josefin Sans', sans-serif;
+    font-size: 18pt;
+    font-weight: 300;
+    position: fixed;
 }
 
 .navbar-brand img {
@@ -21,7 +31,7 @@ nav {
 #hero h1 {
     font-size: 50pt;
     color: #FF931E;
-    font-weight: bolder;
+    font-weight: 700;
 }
 
 #hero span {
@@ -36,6 +46,7 @@ nav {
     font-size: 30pt;
     color: #777;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 @keyframes fadeSlidein {
@@ -119,3 +130,34 @@ nav {
     from, to { border-color: transparent }
     50% { border-color: orange; }
   }
+
+   /* body */
+   .banner {
+     border-radius: 30px;
+     background-color: #FF931E;
+     overflow: hidden;
+     padding: 0;
+     transition: 0.3s ease-in-out;
+     margin-bottom: 30px;
+    opacity: 0;
+   }
+
+   .banner img {
+     width: 100%;
+   }
+
+   .banner:hover {
+     transform: translateY(-20px);
+     box-shadow: 0px 10px 30px #192033;
+   }
+
+/* accssibility settings */
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
+}

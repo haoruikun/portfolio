@@ -1,0 +1,38 @@
+/* general settings for all detail pages */
+
+h2 {
+    font-size: 40pt;
+}
+
+#header img {
+    width: 100%;
+}
+
+body img {
+    width: 100%;
+}
+
+section {
+    margin-bottom: 100px;
+}
+
+/* general settings for all detail pages */
+
+
+
+
+body {
+    background-color: #192033;
+    color: lightgray;
+}
+
+
+#description-text, h2 {
+    color: #CAB857;
+}
+
+
+
+
+
+
