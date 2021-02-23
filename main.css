@@ -3,160 +3,176 @@ strong {
   font-weight: 600;
 }
 
-
 /* end */
 body {
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 18pt;
-    font-weight: 300;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18pt;
+  font-weight: 300;
 }
 
 .navbar-brand img {
-    width: 180px;
+  width: 180px;
 }
 
 nav {
-    font-size: 16pt;
+  font-size: 16pt;
 }
 
 #avatar {
-    height: 500px;
+  height: 500px;
 }
 
 #avatar-mobile {
-    width: 70%;
+  width: 70%;
 }
 
 #hero h1 {
-    font-size: 50pt;
-    color: #FF931E;
-    font-weight: 700;
+  font-size: 50pt;
+  color: #ff931e;
+  font-weight: 700;
 }
 
 #hero span {
-    color: #FF931E;
+  color: #ff931e;
 }
 
 #hero p {
-    line-height: 50px;
+  line-height: 50px;
 }
 
 #hero {
-    font-size: 30pt;
-    color: #777;
-    margin-top: 50px;
-    margin-bottom: 50px;
+  font-size: 30pt;
+  color: #777;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 @keyframes fadeSlidein {
-    from {
-      transform: translateX(-100px);
-      opacity: 0;
-    }
-  
-    to {
-      transform: translateX(0px);
-      opacity: 1;
-    }
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
   }
+
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
 
 @keyframes fadeSlideinL {
-    from {
-      transform: translateX(-100px);
-      opacity: 0;
-    }
-  
-    to {
-      transform: translateX(0px);
-      opacity: 1;
-    }
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
   }
 
-  @keyframes fadeSlideinR {
-    from {
-      transform: translateX(100px);
-      opacity: 0;
-    }
-  
-    to {
-      transform: translateX(0px);
-      opacity: 1;
-    }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
   }
+}
+
+@keyframes fadeSlideinR {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
 
 .hero-text {
-    animation: fadeSlideinL 1s;
-    animation-delay: 1.5s;
+  animation: fadeSlideinL 1s;
+  animation-delay: 1.5s;
 }
 
 .hero-img {
-    animation: fadeSlideinR 1s;
-    animation-delay: 1.5s;
+  animation: fadeSlideinR 1s;
+  animation-delay: 1.5s;
 }
 
 #preloader {
-    background-color: white;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 700;
-    position: absolute;
-    z-index: 9999;
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  position: absolute;
+  z-index: 9999;
 }
 
 /* typewriter animations */
 .typewriter h1 {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: .15em solid orange; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: .15em; /* Adjust as needed */
-    animation: 
-      typing 1s steps(40, end),
-      blink-caret .75s step-end infinite;
-  }
-  
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
-  }
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 1s steps(40, end), blink-caret 0.75s step-end infinite;
+}
 
-   /* body */
-   .banner {
-     border-radius: 30px;
-     background-color: #FF931E;
-     overflow: hidden;
-     padding: 0;
-     transition: 0.3s ease-in-out;
-     margin-bottom: 30px;
-    opacity: 0;
-   }
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
 
-   .banner img {
-     width: 100%;
-   }
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
 
-   .banner:hover {
-     transform: translateY(-20px);
-     box-shadow: 0px 10px 30px #192033;
-   }
+/* body */
+.banner {
+  border-radius: 20px;
+  background-color: #ff931e;
+  overflow: hidden;
+  padding: 0;
+  transition: 0.3s ease-in-out;
+  margin-bottom: 30px;
+  opacity: 0;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.banner:hover {
+  transform: translateY(-20px);
+  box-shadow: 0px 10px 30px #192033;
+}
 
 /* accssibility settings */
 .sr-only:not(:focus):not(:active) {
-  clip: rect(0 0 0 0); 
+  clip: rect(0 0 0 0);
   clip-path: inset(50%);
   height: 1px;
   overflow: hidden;
   position: absolute;
-  white-space: nowrap; 
+  white-space: nowrap;
   width: 1px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  #hero {
+    font-size: 20pt;
+  }
+  #hero h1 {
+    font-size: 30pt;
+  }
 }
