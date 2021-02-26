@@ -17,6 +17,7 @@
     <!-- CSS&JS -->
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="gamerpalace.css">
+    <script src="main.js" defer></script>
 </head>
   <body>
     <nav class="navbar navbar-light bg-light navbar-expand-lg sticky-top">
@@ -29,11 +30,11 @@
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
             <div class="navbar-nav text-end">
-                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link" aria-current="page" href="index.html">主页</a>
                 <a class="nav-link  active" href="#">UI/UX</a>
-                <a class="nav-link" href="#">Graphic</a>
-                <a class="nav-link " href="#">Websites</a>
-                <a class="nav-link " href="#">Web Applications</a>
+                <a class="nav-link" href="#">平面设计</a>
+                <a class="nav-link " href="#">网页</a>
+                <a class="nav-link " href="#">Web App</a>
             </div>
          </div>
         </div>
@@ -43,59 +44,54 @@
         <img src="media/gamerpalace-header.png" alt="UI Design: GamerPalace - an mobile app for gamer hotel">
         <section id="header-description" class="mt-3">
             <p id="description-text">
-                <strong>GamerPalace is a mobile app for a hotel dedicated to providing best living experiences for gamers. In GamerPalace, residents can not only find the best room that cater their hobbies, but also socialize with other gamers in the hotel.</strong>
+                <strong>GamerPalace是一个游戏主题酒店的手机App。在这款App里，游戏玩家不仅能找到最适合他们的主题房间，还能通过PalaceChat找到一起游戏的开黑队友。</strong>
             </p>
             <p>
-                <strong>Mobile UI Design</strong> (This is a small class assignment, not a complete product)
+                <strong>迷你手机UX/UI设计</strong> (这是一个小设计作业，并非完整的产品设计)
             </p>
             <p>
-                <strong>Role:</strong> Came up with product concept, conducted user research, and created the UI and Figma prototype.
+                <strong>职务:</strong> 产品构想，用户调研，UI设计
             </p>
             <p>
-                <strong>Timeline:</strong> 1 week (short design challenge)
+                <strong>时间:</strong> 一周
             </p>
-            <a target="_blank" href="https://www.figma.com/proto/3N1VTXQN43CBh7rgb5IqTZ/GamerPalace-Prototype?node-id=0%3A3&scaling=scale-down"><button style="width: 100%;" type="button" class="btn btn-primary btn-lg btn-block">View Prototype</button></a>
+            <a target="_blank" href="https://www.figma.com/proto/3N1VTXQN43CBh7rgb5IqTZ/GamerPalace-Prototype?node-id=0%3A3&scaling=scale-down"><button style="width: 100%;" type="button" class="btn btn-primary btn-lg btn-block">浏览 App Prototype</button></a>
         </section>
     </div>
     <div class="container" id="body">
         <section>
-            <h2>The Problem</h2>
-            <p>There are many gamers who travel- they like to travel during the day, and want to play games during the night in hotels. </p>
-            <p style="font-size: 30pt; font-weight: 500; text-align: center;">However, most hotels don’t provide the gaming equipments gamers need. </p>
+            <h2>用户痛点</h2>
+            <p>许多游戏玩家在外旅游时，晚上在旅店游戏的时候也想要玩游戏。</p>
+            <p style="font-size: 30pt; font-weight: 700; text-align: center;">但是大多数旅店无法提供游戏玩家所需要的游戏设备与服务。</p>
             <figure>
                 <img src="media/gaming-equipments.jpg" alt="Picture of Gaming equipments">
-                <figcaption class="text-center">"It is very rare for general hotels to provide adequate gaming equipments."</figcaption>
+                <figcaption class="text-center">"设想一下，有哪些酒店能够提供像这样的游戏设备呢？"</figcaption>
             </figure>
         </section>
         <section>
-            <h2>User Research</h2>
-            <p>I interviewed 5 gamers. I first asked them what do they want in the hotel for their next trip that could cater their gaming needs. Their answers varies a lot because they like to play different kinds of games. Some people want high performing computer, some want gaming consoles, and some want table and collections of board games. So I figure that we should <strong>provide different kinds of room catering different gaming needs.</strong> We can have different themes like PC themes, console themes, and board game themes. </p>
-            <p>Then I move on to the app itself, I asked them what features do they want in the hotel app. I got a lot of feedback. Besides some common basic features like browsing and booking , many of my interviewees pointed out that they wanted some kind of <strong>chatting features that can enable them to chat with other gamers in the hotel so they can play games together.</strong> I decide to incorporate this feature in the app so our customers can have a good time and even build a gamer community that could be our loyal long-term customer group. </p>
+            <h2>用户调研</h2>
+            <p>我们采访了五位游戏玩家。最开始我们问他们关于游戏酒店的问题，比如“在你下一次旅游的时候，想要在未来住的酒店里面有什么东西可以满足你们的游戏需求”？ 这五位玩家给出了很多不一样的答案： 有些人想要能吃鸡的高配置电脑，有些人想要PS5、Xbox这些游戏主机，而有些人想要桌游。所以我们认为，在GamerPalace中应该给用户展示、推送各种不同的主题房间来满足不同用户的需求。</p>
+            <p>然后我们开始采访关于App本身的问题。比如“你们想要在游戏酒店App里有什么功能”。我们收集到了许多建议，其中不乏一些酒店软件的基本功能，例如看房，订房，还有酒店地址联系方式等。除此之外，许多用户反馈到他们希望有<strong>一种聊天功能能让他们在旅店里找其他一起玩游戏一起开黑的伙伴。</strong>我们决定将这个酒店群聊功能加入到App中，因为它不仅可以让玩家们有更良好的居住体验，而且还能围绕酒店建立起游戏社群，这些都可能会发展成酒店的活跃用户。</p>
         </section>
         <section>
-            <h2>The Goals</h2>
+            <h2>设计目标</h2>
             <ol>
-                <li>Provide basic functions like browsing, booking, and locating the hotel.</li>
-                <li>Display different room themes for different types of gamers.</li>
-                <li>Include a chatting function that allows gamers in the hotel to socialize.</li>
+                <li>提供基础酒店App功能，例如看房、订房、查看地址联系方式等。</li>
+                <li>展示各种不同的主题房间来迎合不同的玩家。</li>
+                <li>内置一个酒店玩家群聊功能PalaceChat来让酒店用户找游戏队友。</li>
             </ol>    
         </section>
         <section>
-            <h2>Wireframe Skethces</h2>
+            <h2>UI草稿</h2>
             <img src="media/gamer-palace-wireframe.png" alt="wireframe">
         </section>
         <section>
-            <h2>Final Design</h2>
+            <h2>最终设计</h2>
             <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="800" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F3N1VTXQN43CBh7rgb5IqTZ%2FGamerPalace-Prototype%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
         </section>
         <section>
-            <h2>Prototype</h2>
+            <h2>Prototype （可互动）</h2>
             <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="800" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F3N1VTXQN43CBh7rgb5IqTZ%2FGamerPalace-Prototype%3Fnode-id%3D0%253A3%26scaling%3Dscale-down" allowfullscreen></iframe>
-        </section>
-        <section>
-            <h2>Reflection</h2>
-            <p>User research is a powerful process. I started this project without the idea of incorperating chat features. Through user research, I learned what my users really want, and I was able to design the best product for them.</p>
-            <p><strong>Next steps:</strong> Due to the time limit of this short design challenge, I was only able to do one round of research and created a basic layout of the app. The next steps would be doing more prototypes for more features and do rapid user testing and prototyping to improve the product.</p>
         </section>
     </div>
 

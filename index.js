@@ -8,5 +8,5 @@ $(document).ready(function(){
 $(document).ready(function(){
     setTimeout(function(){
         $('.banner').css('opacity', '1');
-    }, 2500)
+    }, 2000)
 })
