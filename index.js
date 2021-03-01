@@ -10,3 +10,7 @@ $(document).ready(function(){
         $('.banner').css('opacity', '1');
     }, 2000)
 })
+
+// $('#summonersearch').on('shown.bs.modal', function () {
+//     $('#summonersearch').trigger('focus')
+//   })

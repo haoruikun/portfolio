@@ -1,0 +1,16 @@
+.header {
+    margin-bottom: 50px;
+}
+
+.header {
+    background-color: #ff931e;
+      background-image:url("media/uiux-bg.svg");
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: cover;
+      /* background by SVGBackgrounds.com */
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

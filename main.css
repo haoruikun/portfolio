@@ -1,21 +1,28 @@
 /* general settings */
-strong {
-  font-weight: 700;
-}
-
-span {
-  color: #ff931e;
-}
-
-.fadein {
-  opacity: 0;
-}
-
-/* end */
 body {
   font-family: "source-han-sans-simplified-c", sans-serif;
   font-size: 18pt;
   font-weight: 300;
+}
+
+.header h1 {
+  font-size: 60pt;
+  color: white;
+  text-shadow: 2px 2px 30px rgb(146, 72, 30);
+}
+
+.bg-theme {
+  background-color: #ff931e;
+}
+
+.btn-theme {
+  background-color: #ff931e;
+  color: white;
+}
+
+.btn-theme:hover {
+  background-color: #d37918;
+  color: white;
 }
 
 .navbar-brand img {
@@ -26,159 +33,54 @@ nav {
   font-size: 16pt;
 }
 
-#avatar {
-  height: 500px;
-}
-
-#avatar-mobile {
-  width: 70%;
-}
-
-#hero h1 {
-  font-size: 50pt;
-  color: #ff931e;
+strong {
   font-weight: 700;
-  font-family: "source-han-sans-simplified-c", sans-serif;
 }
 
-#hero p {
-  line-height: 50px;
-}
 
-#hero {
-  font-size: 30pt;
-  color: #777;
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-@keyframes fadeSlidein {
-  from {
-    transform: translateX(-100px);
-    opacity: 0;
-  }
-
-  to {
-    transform: translateX(0px);
-    opacity: 1;
-  }
-}
-
-@keyframes fadeSlideinL {
-  from {
-    transform: translateX(-100px);
-    opacity: 0;
-  }
-
-  to {
-    transform: translateX(0px);
-    opacity: 1;
-  }
-}
-
-@keyframes fadeSlideinR {
-  from {
-    transform: translateX(100px);
-    opacity: 0;
-  }
-
-  to {
-    transform: translateX(0px);
-    opacity: 1;
-  }
-}
-
-.hero-text {
-  animation: fadeSlideinL 1s;
-  animation-delay: 1.5s;
-}
-
-.hero-img {
-  animation: fadeSlideinR 1s;
-  animation-delay: 1.5s;
-}
-
-#preloader {
-  background-color: white;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 700;
-  position: absolute;
-  z-index: 9999;
-}
-
-/* typewriter animations */
-.typewriter h1 {
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid orange; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.15em; /* Adjust as needed */
-  animation: typing 1s steps(40, end), blink-caret 0.75s step-end infinite;
-  font-family: sans-serif;
-}
-
-/* The typing effect */
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from,
-  to {
-    border-color: transparent;
-  }
-  50% {
-    border-color: orange;
-  }
-}
-
-/* body */
-.banner {
-  border-radius: 20px;
-  background-color: #ff931e;
-  overflow: hidden;
-  padding: 0;
-  transition: 0.3s ease-in-out;
-  margin-bottom: 30px;
+.fadein {
   opacity: 0;
 }
 
-.banner img {
-  width: 100%;
+.navbar-nav a {
+  transition: 0.3s ease-in-out;
 }
 
-.banner:hover {
-  transform: translateY(-20px);
-  box-shadow: 0px 10px 30px #192033;
+.navbar-nav a:hover {
+  transform: translateY(-5px);
 }
 
-/* accssibility settings */
-.sr-only:not(:focus):not(:active) {
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  overflow: hidden;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-}
-
-/* Responsive design */
-@media (max-width: 768px) {
-  #hero {
-    font-size: 20pt;
+  /* accssibility settings */
+  .sr-only:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
   }
-  #hero h1 {
-    font-size: 30pt;
+
+  .modal-body img {
+    width: 100%;
   }
-}
+
+  /* body */
+  .banner {
+    border-radius: 20px;
+    background-color: #ff931e;
+    overflow: hidden;
+    padding: 0;
+    transition: 0.3s ease-in-out;
+    margin-bottom: 30px;
+  }
+  
+  .banner img {
+    width: 100%;
+  }
+  
+  .banner:hover {
+    transform: translateY(-20px);
+    box-shadow: 0px 10px 30px #192033;
+  }
+  
