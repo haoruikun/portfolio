@@ -27,6 +27,7 @@
           h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
         })(document);
       </script>
+    <script src="https://kit.fontawesome.com/7ac14d68f8.js" crossorigin="anonymous"></script>
 </head>
   <body style="position: fixed;" class="bg-light">
     <div id="preloader">
@@ -123,7 +124,31 @@
           </a>
         </div>
     </div>
-    
+    <footer class="container-fluid d-flex justify-content-center align-items-center">
+      <div class="container mt-5 d-sm-flex justify-content-center justify-content-sm-between align-items-center flex-wrap">
+        <h3 class="text-center">本网站由郝睿琨纯代码手工打造</h3>
+        <div>
+          <ul class="fa-ul d-none d-sm-inline-block" style="margin-left: 40px;">
+            <li><a href="mailto:haoruikun@iclooud.com"><span class="fa-li"><i class="fas fa-envelope"></i></span><span>haoruikun@icloud.com</span></a></li>
+            <li><span class="fa-li"><i class="fas fa-phone-square"></i></span>+86 18824291188</li>
+            <li><a href="https://www.linkedin.com/in/ruikunhao/" target="_blank"><span class="fa-li"><i class="fab fa-linkedin"></i></span>www.linkedin.com/in/ruikunhao</a></li>
+          </ul>
+          <div class="d-flex d-sm-none justify-content-center mobile-contact">
+            <div style="width: 100%;" class="btn-group mt-3" role="group" aria-label="First group">
+              <button type="button" class="btn btn-info">
+                <a href="mailto:haoruikun@iclooud.com" class="stretched-link"><i class="fas fa-envelope"></i></a>
+              </button>
+              <button type="button" class="btn btn-danger" data-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="手机号码：+86 18824291188">
+                <i class="fas fa-phone"></i>
+              </button>
+              <button type="button" class="btn btn-primary">
+                <a href="https://www.linkedin.com/in/ruikunhao/" class="stretched-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
   </body>
 </html>
