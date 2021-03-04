@@ -20,10 +20,9 @@
   }
 
   #hero h1 {
-    font-size: 50pt;
+    font-size: 40pt;
     color: #d30000;
     font-weight: 700;
-    font-family: "source-han-sans-simplified-c", sans-serif;
   }
   
 
@@ -36,12 +35,21 @@
   }
   
   #hero {
-    font-size: 30pt;
+    font-size: 26pt;
     color: rgb(49, 49, 49);
     margin-top: 50px;
     margin-bottom: 50px;
   }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
   
+    to {
+      opacity: 1;
+    }
+  }
+
   @keyframes fadeSlidein {
     from {
       transform: translateX(-100px);
@@ -76,6 +84,12 @@
       transform: translateX(0px);
       opacity: 1;
     }
+  }
+
+  #preloader h5{
+    animation: fadeIn 1s;
+    margin-top: 10px;
+    text-align: center;
   }
   
   .hero-text {
@@ -143,11 +157,15 @@
     #hero h1 {
       font-size: 30pt;
     }
+
   }
 
-  @media (max-width: 992px) {
+  @media (max-width: 1200px) {
     .hero-container {
       padding: 100px 0px;
+    }
+    #hero p{
+      line-height: normal;
     }
   }
   

@@ -1,6 +1,6 @@
 /* general settings */
 body {
-  font-family: "source-han-sans-simplified-c", sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 18pt;
   font-weight: 300;
 }
@@ -35,6 +35,10 @@ footer {
   color: #f8f9fa;
 }
 
+footer p {
+  font-size: 0.8em;
+}
+
 footer a {
   text-decoration: none;
   color: #f8f9fa;
@@ -56,8 +60,9 @@ footer ul {
 
 .header h1 {
   font-size: 60pt;
+  font-weight: 700;
   color: white;
-  text-shadow: 2px 2px 30px rgb(146, 72, 30);
+  text-shadow: rgba(165, 155, 149, 0.2) 0px 8px 24px;
   text-align: center;
 }
 
@@ -88,9 +93,9 @@ strong {
 }
 
 
-.fadein {
+/* .fadein {
   opacity: 0;
-}
+} */
 
 .navbar-nav a {
   transition: 0.3s ease-in-out;
@@ -136,4 +141,14 @@ strong {
   
   .mobile-contact {
     font-size: 30pt;
+  }
+
+  @media (max-width: 768px) {
+    .banner{
+      margin-bottom: 15px;
+    } 
+
+    .banner:hover {
+      transform: translateY(-10px);
+    }
   }

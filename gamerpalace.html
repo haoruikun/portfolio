@@ -11,7 +11,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous" defer></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <!-- font -->
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous" defer></script>
     <!-- CSS&JS -->
@@ -19,23 +20,13 @@
     <link rel="stylesheet" href="detail.css">
     <link rel="stylesheet" href="gamerpalace.css">
     <script src="main.js" defer></script>
-    <script>
-        (function(d) {
-          var config = {
-            kitId: 'lgh0vcd',
-            scriptTimeout: 3000,
-            async: true
-          },
-          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-        })(document);
-      </script>
     <script src="https://kit.fontawesome.com/7ac14d68f8.js" crossorigin="anonymous"></script>
 </head>
   <body>
     <div class="preloader">
         <div>
           <img src="media/rocket.svg" alt="Loading">
-          <p>疯狂加载中</p>
+          <p>Loading...</p>
         </div>
     </div>
     <nav class="navbar navbar-light bg-light navbar-expand-lg sticky-top">
@@ -48,94 +39,102 @@
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
             <div class="navbar-nav text-end">
-                <a class="nav-link" aria-current="page" href="index.html">主页</a>
-                <a class="nav-link active" href="uiux.html">UI/UX</a>
-                <a class="nav-link" href="design.html">平面设计</a>
-                <a class="nav-link " href="web.html">网页</a>
-                <a class="nav-link " href="webapp.html">Web App</a>
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              <a class="nav-link active" href="uiux.html">UI/UX</a>
+              <a class="nav-link" href="design.html">Graphic</a>
+              <a class="nav-link " href="web.html">Websites</a>
+              <a class="nav-link " href="webapp.html">Web App</a>
             </div>
          </div>
         </div>
     </nav>
     <div class="container mb-5" id="header">
-        <h1 class="sr-only">GamerPalace</h1>
-        <img src="media/gamerpalace-header.png" alt="UI Design: GamerPalace - an mobile app for gamer hotel">
-        <section id="header-description" class="mt-3">
-            <p class="description-text">
-                <strong>GamerPalace是一个游戏主题酒店的手机App。在这款App里，游戏玩家不仅能找到最适合他们的主题房间，还能通过PalaceChat找到一起游戏的开黑队友。</strong>
-            </p>
-            <p>
-                <strong>迷你手机App UX/UI设计</strong> (这是一个小设计作业，并非完整的产品设计)
-            </p>
-            <p>
-                <strong>职务:</strong> 产品构想，用户调研，UI设计
-            </p>
-            <p>
-                <strong>时间:</strong> 一周
-            </p>
-            <a target="_blank" href="https://www.figma.com/proto/3N1VTXQN43CBh7rgb5IqTZ/GamerPalace-Prototype?node-id=0%3A3&scaling=scale-down"><button style="width: 100%;" type="button" class="btn btn-theme btn-lg btn-block">浏览 App Prototype</button></a>
-        </section>
-    </div>
+      <h1 class="sr-only">GamerPalace</h1>
+      <img src="media/gamerpalace-header.png" alt="UI Design: GamerPalace - an mobile app for gamer hotel">
+      <section id="header-description" class="mt-3">
+          <p id="description-text">
+              <strong>GamerPalace is a mobile app for a hotel dedicated to providing the best living experiences for gamers. In GamerPalace, residents can not only find the best room that caters to their hobbies, but also socialize with other gamers in the hotel.</strong>
+          </p>
+          <p>
+              <strong>Mobile UI Design</strong> (This is a small class assignment, not a complete product)
+          </p>
+          <p>
+              <strong>Role:</strong> Came up with product concept, conducted user research, and created the UI and Figma prototype.
+          </p>
+          <p>
+              <strong>Timeline:</strong> 1 week (short design challenge)
+          </p>
+          <a target="_blank" href="https://www.figma.com/proto/3N1VTXQN43CBh7rgb5IqTZ/GamerPalace-Prototype?node-id=0%3A3&scaling=scale-down"><button style="width: 100%;" type="button" class="btn btn-primary btn-lg btn-block">View Prototype</button></a>
+      </section>
+  </div>
     <div class="container" id="body">
-        <section>
-            <h2>用户痛点</h2>
-            <p>许多游戏玩家在外旅游时，晚上在旅店游戏的时候也想要玩游戏。</p>
-            <p style="font-size: 30pt; font-weight: 700; text-align: center;">但是大多数旅店无法提供游戏玩家所需要的游戏设备与服务。</p>
-            <figure>
-                <img src="media/gaming-equipments.jpg" alt="Picture of Gaming equipments">
-                <figcaption class="text-center">"设想一下，有哪些酒店能够提供像这样的游戏设备呢？"</figcaption>
-            </figure>
-        </section>
-        <section>
-            <h2>用户调研</h2>
-            <p>我们采访了五位游戏玩家。最开始我们问他们关于游戏酒店的问题，比如“在你下一次旅游的时候，想要在未来住的酒店里面有什么东西可以满足你们的游戏需求”？ 这五位玩家给出了很多不一样的答案： 有些人想要能吃鸡的高配置电脑，有些人想要PS5、Xbox这些游戏主机，而有些人想要桌游。所以我们认为，在GamerPalace中应该给用户展示、推送各种不同的主题房间来满足不同用户的需求。</p>
-            <p>然后我们开始采访关于App本身的问题。比如“你们想要在游戏酒店App里有什么功能”。我们收集到了许多建议，其中不乏一些酒店软件的基本功能，例如看房，订房，还有酒店地址联系方式等。除此之外，许多用户反馈到他们希望有<strong>一种聊天功能能让他们在旅店里找其他一起玩游戏一起开黑的伙伴。</strong>我们决定将这个酒店群聊功能加入到App中，因为它不仅可以让玩家们有更良好的居住体验，而且还能围绕酒店建立起游戏社群，这些都可能会发展成酒店的活跃用户。</p>
-        </section>
-        <section>
-            <h2>设计目标</h2>
-            <ol>
-                <li>提供基础酒店App功能，例如看房、订房、查看地址联系方式等。</li>
-                <li>展示各种不同的主题房间来迎合不同的玩家。</li>
-                <li>内置一个酒店玩家群聊功能PalaceChat来让酒店用户找游戏队友。</li>
-            </ol>    
-        </section>
-        <section>
-            <h2>UI草稿</h2>
-            <img src="media/gamer-palace-wireframe.png" alt="wireframe">
-        </section>
-        <section>
-            <h2>最终设计</h2>
-            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="800" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F3N1VTXQN43CBh7rgb5IqTZ%2FGamerPalace-Prototype%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
-        </section>
-        <section>
-            <h2>Prototype （可互动）</h2>
-            <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="800" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F3N1VTXQN43CBh7rgb5IqTZ%2FGamerPalace-Prototype%3Fnode-id%3D0%253A3%26scaling%3Dscale-down" allowfullscreen></iframe>
-        </section>
+      <section>
+          <h2>The Problem</h2>
+          <p>There are many gamers who travel- they like to travel during the day, and want to play games during the night in hotels. </p>
+          <p style="font-size: 30pt; font-weight: 700; text-align: center;">However, most hotels don’t provide the gaming equipment gamers need. </p>
+          <figure>
+              <img src="media/gaming-equipments.jpg" alt="Picture of Gaming equipments">
+              <figcaption class="text-center">"It is very rare for general hotels to provide adequate gaming equipment."</figcaption>
+          </figure>
+      </section>
+      <section>
+          <h2>User Research</h2>
+          <p>I interviewed 5 gamers. I first asked them what do they want in the hotel for their next trip that could cater to their gaming needs. Their answers vary a lot because they like to play different kinds of games. Some people want high performing computer, some want gaming consoles, and some want tables and collections of board games. So I figure that we should <strong>provide different kinds of rooms catering to different gaming needs.</strong> We can have different themes like PC themes, console themes, and board game themes. </p>
+          <p>Then I move on to the app itself, I asked them what features do they want in the hotel app. I got a lot of feedback. Besides some common basic features like browsing and booking, many of my interviewees pointed out that they wanted some kind of <strong>chatting features that can enable them to chat with other gamers in the hotel so they can play games together.</strong> I decided to incorporate this feature in the app so our customers can have a good time and even build a gamer community that could be our loyal long-term customer group. </p>
+      </section>
+      <section>
+          <h2>The Goals</h2>
+          <ol>
+              <li>Provide basic functions like browsing, booking, and locating the hotel.</li>
+              <li>Display different room themes for different types of gamers.</li>
+              <li>Include a chatting function that allows gamers in the hotel to socialize.</li>
+          </ol>    
+      </section>
+      <section>
+          <h2>Wireframe Sketches</h2>
+          <img src="media/gamer-palace-wireframe.png" alt="wireframe">
+      </section>
+      <section>
+          <h2>Final Design</h2>
+          <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="800" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F3N1VTXQN43CBh7rgb5IqTZ%2FGamerPalace-Prototype%3Fnode-id%3D0%253A1" allowfullscreen></iframe>
+      </section>
+      <section>
+          <h2>Prototype</h2>
+          <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="800" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F3N1VTXQN43CBh7rgb5IqTZ%2FGamerPalace-Prototype%3Fnode-id%3D0%253A3%26scaling%3Dscale-down" allowfullscreen></iframe>
+      </section>
+      <section>
+          <h2>Reflection</h2>
+          <p>User research is a powerful process. I started this project without the idea of incorporating chat features. Through user research, I learned what my users really want, and I was able to design the best product for them.</p>
+          <p><strong>Next steps:</strong> Due to the time limit of this short design challenge, I was only able to do one round of research and created a basic layout of the app. The next steps would be doing more prototypes for more features and do rapid user testing and prototyping to improve the product.</p>
+      </section>
     </div>
     <footer class="container-fluid d-flex justify-content-center align-items-center">
-        <div class="container mt-5 d-sm-flex justify-content-center justify-content-sm-between align-items-center flex-wrap">
-          <h3 class="text-center">本网站由郝睿琨纯代码手工打造</h3>
-          <div>
-            <ul class="fa-ul d-none d-sm-inline-block" style="margin-left: 40px;">
-              <li><a href="mailto:haoruikun@iclooud.com"><span class="fa-li"><i class="fas fa-envelope"></i></span><span>haoruikun@icloud.com</span></a></li>
-              <li><span class="fa-li"><i class="fas fa-phone-square"></i></span>+86 18824291188</li>
-              <li><a href="https://www.linkedin.com/in/ruikunhao/" target="_blank"><span class="fa-li"><i class="fab fa-linkedin"></i></span>www.linkedin.com/in/ruikunhao</a></li>
-            </ul>
-            <div class="d-flex d-sm-none justify-content-center mobile-contact">
-              <div style="width: 100%;" class="btn-group mt-3" role="group" aria-label="First group">
-                <button type="button" class="btn btn-info">
-                  <a href="mailto:haoruikun@iclooud.com" class="stretched-link"><i class="fas fa-envelope"></i></a>
-                </button>
-                <button type="button" class="btn btn-danger" data-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="手机号码：+86 18824291188">
-                  <i class="fas fa-phone"></i>
-                </button>
-                <button type="button" class="btn btn-primary">
-                  <a href="https://www.linkedin.com/in/ruikunhao/" class="stretched-link" target="_blank"><i class="fab fa-linkedin"></i></a>
-                </button>
-              </div>
+      <div class="container mt-5 d-sm-flex justify-content-center justify-content-sm-between align-items-center flex-wrap">
+        <div>
+          <h3 class="text-center mb-0">Made with heart and code</h3>
+          <p class="text-center text-sm-start mb-0">© 2021 by Harry Hao</p>
+        </div>
+        <div>
+          <ul class="fa-ul d-none d-sm-inline-block" style="margin-left: 40px;">
+            <li><a href="mailto:haoruikun@iclooud.com"><span class="fa-li"><i class="fas fa-envelope"></i></span><span>haoruikun@icloud.com</span></a></li>
+            <li><span class="fa-li"><i class="fas fa-phone-square"></i></span>323-698-4331</li>
+            <li><a href="https://www.linkedin.com/in/ruikunhao/" target="_blank"><span class="fa-li"><i class="fab fa-linkedin"></i></span>www.linkedin.com/in/ruikunhao</a></li>
+          </ul>
+          <div class="d-flex d-sm-none justify-content-center mobile-contact">
+            <div style="width: 100%;" class="btn-group mt-3" role="group" aria-label="First group">
+              <button type="button" class="btn btn-info">
+                <a href="mailto:haoruikun@iclooud.com" class="stretched-link"><i class="fas fa-envelope"></i></a>
+              </button>
+              <button type="button" class="btn btn-danger" data-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Phone number: 323-698-4331">
+                <i class="fas fa-phone"></i>
+              </button>
+              <button type="button" class="btn btn-primary">
+                <a href="https://www.linkedin.com/in/ruikunhao/" class="stretched-link" target="_blank"><i class="fab fa-linkedin"></i></a>
+              </button>
             </div>
           </div>
         </div>
-      </footer>
+      </div>
+    </footer>
   </body>
 </html>
