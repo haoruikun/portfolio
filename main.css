@@ -5,6 +5,14 @@ body {
   font-weight: 300;
 }
 
+a {
+  color:#ff931e;
+}
+
+a:hover {
+  color: #aa6316;
+}
+
 .preloader {
   position: fixed;
   display: flex;
