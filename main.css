@@ -5,6 +5,10 @@ body {
   font-weight: 300;
 }
 
+.breadcrumb-container {
+  background-color: #e6e6e6;
+}
+
 a {
   color:#ff931e;
 }
@@ -70,7 +74,7 @@ footer ul {
   font-size: 60pt;
   font-weight: 700;
   color: white;
-  text-shadow: rgba(165, 155, 149, 0.2) 0px 8px 24px;
+  text-shadow: rgba(122, 98, 84, 0.8) 0px 8px 30px;
   text-align: center;
 }
 
@@ -98,6 +102,10 @@ nav {
 
 strong {
   font-weight: 700;
+}
+
+.card-header {
+  font-size: 16pt;
 }
 
 
@@ -158,5 +166,9 @@ strong {
 
     .banner:hover {
       transform: translateY(-10px);
+    }
+
+    .header h1{
+      font-size: 30pt;
     }
   }
