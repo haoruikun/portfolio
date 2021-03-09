@@ -5,6 +5,10 @@ body {
   font-weight: 300;
 }
 
+.bg-purple {
+  background-color: #6f42c1;
+}
+
 .breadcrumb-container {
   background-color: #e6e6e6;
 }
@@ -132,7 +136,7 @@ strong {
     width: 1px;
   }
 
-  .modal-body img {
+  .modal-body video {
     width: 100%;
   }
 
