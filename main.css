@@ -5,6 +5,16 @@ body {
   font-weight: 300;
 }
 
+.card {
+  transition: 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  z-index: 999;
+  box-shadow: rgba(122, 98, 84, 0.3) 0px 8px 30px;
+}
+
 .bg-purple {
   background-color: #6f42c1;
 }
