@@ -4,168 +4,162 @@
 }
 
 #avatar {
-    height: 500px;
-  }
-  
-  #avatar-mobile {
-    width: 70%;
-  }
-  
-  .hero-container {
-    background-image: url('media/hero-background.svg');
-    background-color: #f8f9fa;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
+  height: 500px;
+}
 
-  #hero h1 {
-    font-size: 40pt;
-    color: #d30000;
-    font-weight: 700;
-  }
-  
+#avatar-mobile {
+  width: 70%;
+}
+
+.hero-container {
+  background-image: url("media/hero-background.svg");
+  background-color: #f8f9fa;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#hero h1 {
+  font-size: 40pt;
+  color: #d30000;
+  font-weight: 700;
+}
 
 #hero span {
   color: #d30000;
 }
 
-  #hero p {
-    line-height: 50px;
+#hero p {
+  line-height: 50px;
+}
+
+#hero {
+  font-size: 26pt;
+  color: rgb(49, 49, 49);
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-  
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeSlidein {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeSlideinL {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeSlideinR {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+#preloader h5 {
+  animation: fadeIn 1s;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.hero-text {
+  animation: fadeSlideinL 1s;
+  animation-delay: 1s;
+}
+
+.hero-img {
+  animation: fadeSlideinR 1s;
+  animation-delay: 1s;
+}
+
+#preloader {
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  position: absolute;
+  z-index: 9999;
+}
+
+/* typewriter animations */
+.typewriter h1 {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 0.6s steps(40, end), blink-caret 0.4s step-end infinite;
+  font-family: "Microsoft YaHei", sans-serif;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: orange;
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
   #hero {
-    font-size: 26pt;
-    color: rgb(49, 49, 49);
-    margin-top: 50px;
-    margin-bottom: 50px;
+    font-size: 20pt;
   }
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-  
-    to {
-      opacity: 1;
-    }
+  #hero h1 {
+    font-size: 30pt;
   }
+}
 
-  @keyframes fadeSlidein {
-    from {
-      transform: translateX(-100px);
-      opacity: 0;
-    }
-  
-    to {
-      transform: translateX(0px);
-      opacity: 1;
-    }
+@media (max-width: 1200px) {
+  .hero-container {
+    padding: 100px 0px;
   }
-  
-  @keyframes fadeSlideinL {
-    from {
-      transform: translateX(-100px);
-      opacity: 0;
-    }
-  
-    to {
-      transform: translateX(0px);
-      opacity: 1;
-    }
+  #hero p {
+    line-height: normal;
   }
-  
-  @keyframes fadeSlideinR {
-    from {
-      transform: translateX(100px);
-      opacity: 0;
-    }
-  
-    to {
-      transform: translateX(0px);
-      opacity: 1;
-    }
-  }
-
-  #preloader h5{
-    animation: fadeIn 1s;
-    margin-top: 10px;
-    text-align: center;
-  }
-  
-  .hero-text {
-    animation: fadeSlideinL 1s;
-    animation-delay: 1s;
-  }
-  
-  .hero-img {
-    animation: fadeSlideinR 1s;
-    animation-delay: 1s;
-  }
-  
-  #preloader {
-    background-color: white;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: 700;
-    position: absolute;
-    z-index: 9999;
-  }
-  
-  /* typewriter animations */
-  .typewriter h1 {
-    overflow: hidden; /* Ensures the content is not revealed until the animation */
-    border-right: 0.15em solid orange; /* The typwriter cursor */
-    white-space: nowrap; /* Keeps the content on a single line */
-    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-    letter-spacing: 0.15em; /* Adjust as needed */
-    animation: typing 0.6s steps(40, end), blink-caret 0.4s step-end infinite;
-    font-family: "source-han-sans-simplified-c", sans-serif;
-  }
-  
-  /* The typing effect */
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  }
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from,
-    to {
-      border-color: transparent;
-    }
-    50% {
-      border-color: orange;
-    }
-  }
-  
-  
-
-  
-  /* Responsive design */
-  @media (max-width: 768px) {
-    #hero {
-      font-size: 20pt;
-    }
-    #hero h1 {
-      font-size: 30pt;
-    }
-
-  }
-
-  @media (max-width: 1200px) {
-    .hero-container {
-      padding: 100px 0px;
-    }
-    #hero p{
-      line-height: normal;
-    }
-  }
-  
+}

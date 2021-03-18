@@ -1,8 +1,7 @@
 /* general settings */
 body {
-  font-family: "source-han-sans-simplified-c", sans-serif;
+  font-family: "Microsoft YaHei", sans-serif;
   font-size: 18pt;
-  font-weight: 300;
 }
 
 .card {
@@ -119,14 +118,19 @@ nav {
   font-size: 16pt;
 }
 
-strong {
-  font-weight: 700;
+strong,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bolder;
 }
 
 .card-header {
   font-size: 16pt;
 }
-
 
 /* .fadein {
   opacity: 0;
@@ -140,54 +144,54 @@ strong {
   transform: translateY(-5px);
 }
 
-  /* accssibility settings */
-  .sr-only:not(:focus):not(:active) {
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
-  }
+/* accssibility settings */
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
 
-  .modal-body video {
-    width: 100%;
-  }
+.modal-body video {
+  width: 100%;
+}
 
-  /* body */
+/* body */
+.banner {
+  border-radius: 20px;
+  background-color: #ff931e;
+  overflow: hidden;
+  padding: 0;
+  transition: 0.3s ease-in-out;
+  margin-bottom: 30px;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.banner:hover {
+  transform: translateY(-20px);
+  box-shadow: 0px 10px 30px #192033;
+}
+
+.mobile-contact {
+  font-size: 30pt;
+}
+
+@media (max-width: 768px) {
   .banner {
-    border-radius: 20px;
-    background-color: #ff931e;
-    overflow: hidden;
-    padding: 0;
-    transition: 0.3s ease-in-out;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
-  
-  .banner img {
-    width: 100%;
-  }
-  
+
   .banner:hover {
-    transform: translateY(-20px);
-    box-shadow: 0px 10px 30px #192033;
+    transform: translateY(-10px);
   }
-  
-  .mobile-contact {
+
+  .header h1 {
     font-size: 30pt;
   }
-
-  @media (max-width: 768px) {
-    .banner{
-      margin-bottom: 15px;
-    } 
-
-    .banner:hover {
-      transform: translateY(-10px);
-    }
-
-    .header h1{
-      font-size: 30pt;
-    }
-  }
+}
