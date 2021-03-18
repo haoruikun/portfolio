@@ -1,6 +1,6 @@
 /* general settings */
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "source-han-sans-simplified-c", sans-serif;
   font-size: 18pt;
   font-weight: 300;
 }
@@ -24,7 +24,12 @@ body {
 }
 
 a {
-  color:#ff931e;
+  color: #ff931e;
+}
+
+.navbar-nav .active {
+  color: #ff931e !important;
+  font-weight: 700;
 }
 
 a:hover {

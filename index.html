@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <title>Harry Portfolio</title>
+    <title>郝睿琨作品集</title>
     <!-- Bootstrap JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous" defer></script>
     <!-- jquery -->
@@ -18,7 +18,16 @@
     <script src="index.js" defer></script>
     <!-- font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <script>
+      (function(d) {
+        var config = {
+          kitId: 'lgh0vcd',
+          scriptTimeout: 3000,
+          async: true
+        },
+        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+      })(document);
+    </script>
     <script src="https://kit.fontawesome.com/7ac14d68f8.js" crossorigin="anonymous"></script>
 </head>
   <body style="position: fixed;" class="bg-light">
@@ -27,7 +36,7 @@
         <div class="typewriter">
           <h1>&lt;H&gt;&lt;/H&gt;</h1>
         </div>
-        <h5>Loading...</h5>
+        <h5>正在加载中，请稍等...</h5>
       </div>
     </div>
     <nav class="navbar navbar-light bg-light navbar-expand-lg sticky-top">
@@ -40,10 +49,10 @@
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
             <div class="navbar-nav text-end">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                <a class="nav-link active" aria-current="page" href="index.html">主页</a>
                 <a class="nav-link" href="uiux.html">UI/UX</a>
-                <a class="nav-link" href="design.html">Graphics</a>
-                <a class="nav-link " href="webapp.html">Web</a>
+                <a class="nav-link" href="design.html">设计</a>
+                <a class="nav-link " href="webapp.html">网页</a>
             </div>
          </div>
         </div>
@@ -53,10 +62,10 @@
         <div class="row">
           
             <div class="col-lg-8 d-flex align-items-center px-4 px-sm-2 hero-text">
-                <div>
-                  <h1>Hi! I'm Harry(Ruikun) Hao</h1>
-                  <p>A <strong>designer</strong> & <strong>web developer</strong> dedicated to creating <span>accessible</span> and <span>11-stars</span> user experience.</p>
-                </div>
+              <div>
+                <h1>你好，我是郝睿琨</h1>
+                <p>一个致力于打造极致用户体验的<span>设计师</span>和<span>Web开发人员</span></p>
+            </div>
             </div>
             <div class="col-4 justify-content-end d-lg-flex d-none hero-img">
                 <img id="avatar" src="media/avatar.svg" alt="Harry Avatar">
@@ -87,24 +96,23 @@
                     </a>
                     <section class="px-5 mt-3">
                       <p>
-                        <strong>SummonerSearch is a summoner search engine that allows League of Legends players to search for summoner’s(gamers) names and get their info like ranked, wins, loss, etc. It also has a compare function for users to compare two summoners.</strong>
+                        SummonerSearch是一个查询美服英雄联盟段位的Web App。用户可以查询一个玩家的段位，胜点，胜率。同时，用户还可以比较两个不同玩家的游戏数据。
                       </p>
                       <p>
-                          <strong>Core Features:</strong> 
+                          <strong>主要功能：</strong> 
                           <ol>
-                            <li>Search for summoner's ranking information.</li>
-                            <li>Compare two summoners.</li>
+                            <li>查询玩家段位，胜点，以及胜率。</li>
+                            <li>对比两个不同玩家的游戏数据。</li>
                           </ol>
                       </p>
                       <p>
-                        <strong>Technologies Used:</strong> HTML, CSS, JavasScript, PHP, Bootstrap, JSON, AJAX, and Riot API.
+                        <strong>所用技术:</strong> HTML, CSS, JavasScript, PHP, Bootstrap, JSON AJAX, Riot API.
                       </p>
                     </section>
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <a href="https://viterbi-web.usc.edu/~ruikunha/itp301/final_project/" target="_blank"><button type="button" class="btn btn-theme">View Web App</button></a>
-                  </div>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">关闭</button>
+                    <a href="https://viterbi-web.usc.edu/~ruikunha/itp301/final_project/" target="_blank"><button type="button" class="btn btn-theme">浏览Web App</button></a>                  </div>
                 </div>
               </div>
             </div>
@@ -122,22 +130,19 @@
     </div>
     <footer class="container-fluid d-flex justify-content-center align-items-center">
       <div class="container mt-5 d-sm-flex justify-content-center justify-content-sm-between align-items-center flex-wrap">
-        <div>
-          <h3 class="text-center mb-0">Made with heart and code</h3>
-          <p class="text-center text-sm-start mb-0">© 2021 by Harry Hao</p>
-        </div>
+        <h3 class="text-center">本网站由郝睿琨纯代码手工打造</h3>
         <div>
           <ul class="fa-ul d-none d-sm-inline-block" style="margin-left: 40px;">
-            <li><a href="mailto:ruikunha@usc.edu"><span class="fa-li"><i class="fas fa-envelope"></i></span><span>ruikunha@usc.edu</span></a></li>
-            <li><span class="fa-li"><i class="fas fa-phone-square"></i></span>323-698-4331</li>
+            <li><a href="mailto:haoruikun@iclooud.com"><span class="fa-li"><i class="fas fa-envelope"></i></span><span>haoruikun@icloud.com</span></a></li>
+            <li><span class="fa-li"><i class="fas fa-phone-square"></i></span>+86 18824291188</li>
             <li><a href="https://www.linkedin.com/in/ruikunhao/" target="_blank"><span class="fa-li"><i class="fab fa-linkedin"></i></span>www.linkedin.com/in/ruikunhao</a></li>
           </ul>
           <div class="d-flex d-sm-none justify-content-center mobile-contact">
             <div style="width: 100%;" class="btn-group mt-3" role="group" aria-label="First group">
               <button type="button" class="btn btn-info">
-                <a href="mailto:ruikunha@usc.edu" class="stretched-link"><i class="fas fa-envelope"></i></a>
+                <a href="mailto:haoruikun@iclooud.com" class="stretched-link"><i class="fas fa-envelope"></i></a>
               </button>
-              <button type="button" class="btn btn-danger" data-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Phone number: 323-698-4331">
+              <button type="button" class="btn btn-danger" data-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="手机号码：+86 18824291188">
                 <i class="fas fa-phone"></i>
               </button>
               <button type="button" class="btn btn-primary">
