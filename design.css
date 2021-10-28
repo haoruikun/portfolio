@@ -1,0 +1,31 @@
+.header {
+    margin-bottom: 50px;
+}
+
+.header {
+    background-color: #ff931e;
+      background-image:url("media/design-bg.svg");
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: cover;
+      /* background by SVGBackgrounds.com */
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h2 {
+    font-size: 30pt;
+    font-weight: 600;
+    color: rgb(63, 63, 63);
+    margin-bottom: 20px;
+  }
+
+  section img, video {
+    transition-duration: 0.3s;
+  }
+
+  section img:hover,  section video:hover{
+    transform: scale(1.03);
+  }
