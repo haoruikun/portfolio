@@ -25,7 +25,7 @@
     <nav class="navbar navbar-light bg-light navbar-expand-lg sticky-top">
         <div class="container align-items-end">
           <a class="navbar-brand" href="index.html">
-              <img src="media/logo.png" alt="Ruikun Hao Logo">
+              <img src="media/logo.png" alt="Ruikun Hao">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -55,6 +55,84 @@
     </section>
     <section class="container body">
       <div class="row">
+        <!-- SummonerSearch -->
+        <div class="col-lg-6 mb-3">
+          <div class="card" style="width: 100%;">
+            <div class="card-header bg-light bg-white">
+              <span class="badge bg-warning ml-1">HTML</span>
+              <span class="badge bg-info ml-1">CSS</span>
+              <span class="badge bg-success ml-1">JavaScript</span>
+              <span class="badge bg-danger ml-1">PHP</span>
+              <span class="badge bg-purple ml-1">Bootstrap</span>
+            </div>
+            <video src="media/pc.mp4" loop muted autoplay class="card-img-top"></video>
+            <div class="card-body">
+              <h5 class="card-title text-center mb-3">PC Builder</h5>
+              <div class="d-flex justify-content-center">
+                <a href="#pcbuilder" data-bs-toggle="modal" class="mx-1 btn btn-theme">Learn More</a>
+                <a href="https://304.itpwebdev.com/~ruikunha/final_project/" target="_blank" class="mx-1 btn btn-theme">View Website</a>
+              </div> <!-- d-felx -->
+            </div> <!-- card-body -->
+          </div> <!-- card -->
+          <!-- Modal -->
+          <div class="modal fade" id="pcbuilder" tabindex="-1" role="dialog" aria-labelledby="pc builder" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header bg-theme">
+                  <h5 class="modal-title text-light" id="exampleModalLongTitle">PC Builder</h5>
+                  <button type="button" class="close border-0 bg-theme" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="text-light">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body bg-light">
+                  <a href="https://304.itpwebdev.com/~ruikunha/final_project/" target="_blank">
+                    <video src="media/pc.mp4" loop muted autoplay></video>
+                  </a>
+                  <section class="px-5 mt-3">
+                    <p>
+                      <strong>PC builder is made for users to create PC builds and also view build guides created
+                        by me and other users. </strong>
+                    </p>
+                    <p>
+                        <strong>How it works:</strong> 
+                        <p>I proved full CRUD functionality for two features: builds and parts. For builds, users can view
+                          build guides and in the home page and the builds page. They can also create, update and
+                          delete builds with different permissions. When you are creating a PC build, you need to select
+                          PC parts (like cpu, gpu, and cooler) from our database too. This introduces the second set of
+                          CRUD functionality for parts. For every part category, users can view, create, update, and
+                          delete parts with different permission level.</p>
+                        <p><strong>What you can try to do: </strong></p>
+                        <ol>
+                          <li>Explore home page, build page, and part pages to view PC build guides and PC parts that
+                            is in our database.</li>
+                          <li>Go to builder page, it will ask you to log in. You can use admin credentials or create a new
+                            account.</li>
+                            <ol>
+                              <li>Account: admin</li>
+                              <li>Password: admin</li>
+                            </ol>
+                          <li>When you finish logging in. You can build your PC from the builder page. When you hit
+                            select, it will take you to the parts page and you can select parts from there by clicking add
+                            button. </li>
+                          <li>Once you hit the add button, the part will be added to the build. </li>
+                          <li>If you don’t find the part you want, you can also add part to our database by clicking the
+                            add part to the list button in the parts page.</li>
+                          <li>When you finish your build, you can see your build in your profile page or in the builds page</li>
+                        </ol>
+                    </p>
+                    <p>
+                      <strong>Technologies Used:</strong> HTML, CSS, JavasScript, PHP, Bootstrap, and jQuery.
+                    </p>
+                  </section>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <a href="https://304.itpwebdev.com/~ruikunha/final_project/" target="_blank"><button type="button" class="btn btn-theme">View Web App</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- col -->
         <!-- SummonerSearch -->
         <div class="col-lg-6 mb-3">
           <div class="card" style="width: 100%;">
@@ -428,58 +506,6 @@
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                   <a href="https://viterbi-web.usc.edu/~ruikunha/itp301/assignment_03/calculator.html" target="_blank"><button type="button" class="btn btn-theme">View Website</button></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> <!-- col -->
-        <!-- Maintenance Request -->
-        <div class="col-lg-6 mb-3">
-          <div class="card" style="width: 100%;">
-            <div class="card-header bg-white">
-              <span class="badge bg-warning ml-1">HTML</span>
-              <span class="badge bg-info ml-1">CSS</span>
-              <span class="badge bg-success ml-1">JavaScript</span>
-              <span class="badge bg-purple ml-1">Bootstrap</span>
-            </div>
-            <video src="media/maintenance.mp4" loop autoplay muted class="card-img-top"></video>
-            <div class="card-body">
-              <h5 class="card-title text-center mb-3">Maintenance Request</h5>
-              <div class="d-flex justify-content-center">
-                <a href="#maintenance" data-bs-toggle="modal" class="mx-1 btn btn-theme">Learn More</a>
-                <a href="https://viterbi-web.usc.edu/~ruikunha/itp301/assignment_07/assignment_07.html" target="_blank" class="mx-1 btn btn-theme">View Website</a>
-              </div> <!-- d-felx -->
-            </div> <!-- card-body -->
-          </div> <!-- card -->
-          <!-- Modal -->
-          <div class="modal fade" id="maintenance" tabindex="-1" role="dialog" aria-labelledby="summonersearch" aria-hidden="true">
-            <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
-              <div class="modal-content">
-                <div class="modal-header bg-theme">
-                  <h5 class="modal-title text-light" id="exampleModalLongTitle">Maintenance Request</h5>
-                  <button type="button" class="close border-0 bg-theme" data-bs-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true" class="text-light">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body bg-light">
-                  <a href="https://viterbi-web.usc.edu/~ruikunha/itp301/assignment_07/assignment_07.html" target="_blank">
-                    <video src="media/maintenance.mp4" autoplay muted loop></video>
-                  </a>
-                  <section class="px-5 mt-3">
-                    <p>
-                      <strong>This is a maintenance request page that allows users to submit maintenance requests or delete them. </strong>
-                    </p>
-                    <p>
-                        <strong>Note:</strong> this is a frontend class project so everything is reset to default when you refresh the page.
-                    </p>
-                    <p>
-                      <strong>Technologies Used:</strong> HTML, CSS, JavasScript, and Bootstrap.
-                    </p>
-                  </section>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <a href="https://viterbi-web.usc.edu/~ruikunha/itp301/assignment_07/assignment_07.html" target="_blank"><button type="button" class="btn btn-theme">View Website</button></a>
                 </div>
               </div>
             </div>

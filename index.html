@@ -33,7 +33,7 @@
     <nav class="navbar navbar-light bg-light navbar-expand-lg sticky-top">
         <div class="container align-items-end">
           <a class="navbar-brand" href="index.html">
-              <img src="media/logo.png" alt="Ruikun Hao Logo">
+              <img src="media/logo.png" alt="Ruikun Hao">
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -66,7 +66,70 @@
         </div>
       </div>
     </section>
-    <div class="container">
+      <div class="container">
+        <div class="row px-1">
+          <a class="banner" data-bs-toggle="modal" href="#pcbuilder">
+              <img src="media/pc-banner.png" alt="Full Stack Web App: PC Builder">
+          </a>
+          <!-- Modal -->
+          <div class="modal fade" id="pcbuilder" tabindex="-1" role="dialog" aria-labelledby="pc builder" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header bg-theme">
+                  <h5 class="modal-title text-light" id="exampleModalLongTitle">PC Builder</h5>
+                  <button type="button" class="close border-0 bg-theme" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="text-light">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body bg-light">
+                  <a href="https://304.itpwebdev.com/~ruikunha/final_project/" target="_blank">
+                    <video src="media/pc.mp4" loop muted autoplay></video>
+                  </a>
+                  <section class="px-5 mt-3">
+                    <p>
+                      <strong>PC builder is made for users to create PC builds and also view build guides created
+                        by me and other users. </strong>
+                    </p>
+                    <p>
+                        <strong>How it works:</strong> 
+                        <p>I proved full CRUD functionality for two features: builds and parts. For builds, users can view
+                          build guides and in the home page and the builds page. They can also create, update and
+                          delete builds with different permissions. When you are creating a PC build, you need to select
+                          PC parts (like cpu, gpu, and cooler) from our database too. This introduces the second set of
+                          CRUD functionality for parts. For every part category, users can view, create, update, and
+                          delete parts with different permission level.</p>
+                        <p><strong>What you can try to do: </strong></p>
+                        <ol>
+                          <li>Explore home page, build page, and part pages to view PC build guides and PC parts that
+                            is in our database.</li>
+                          <li>Go to builder page, it will ask you to log in. You can use admin credentials or create a new
+                            account.</li>
+                            <ol>
+                              <li>Account: admin</li>
+                              <li>Password: admin</li>
+                            </ol>
+                          <li>When you finish logging in. You can build your PC from the builder page. When you hit
+                            select, it will take you to the parts page and you can select parts from there by clicking add
+                            button. </li>
+                          <li>Once you hit the add button, the part will be added to the build. </li>
+                          <li>If you don’t find the part you want, you can also add part to our database by clicking the
+                            add part to the list button in the parts page.</li>
+                          <li>When you finish your build, you can see your build in your profile page or in the builds page</li>
+                        </ol>
+                    </p>
+                    <p>
+                      <strong>Technologies Used:</strong> HTML, CSS, JavasScript, PHP, Bootstrap, and jQuery.
+                    </p>
+                  </section>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <a href="https://304.itpwebdev.com/~ruikunha/final_project/" target="_blank"><button type="button" class="btn btn-theme">View Web App</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="row px-1">
             <a class="banner" data-bs-toggle="modal" href="#summonersearch">
                 <img src="media/summonersearch-banner.png" alt="Web App: Summoner Search">
@@ -110,16 +173,11 @@
             </div>
         </div>
         <div class="row px-1">
-          <a href="gamerpalace.html" class="banner">
-              <img src="media/gamerpalace-banner.png" alt="Mini UX/UI Design: GamerPalace">
-          </a>
-        </div>
-        <div class="row px-1">
           <a href="fuloop.html" class="banner" >
             <img src="media/fuloop-banner.png" alt="UI Design: Fuloop">
           </a>
         </div>
-    </div>
+      </div>
     <footer class="container-fluid d-flex justify-content-center align-items-center">
       <div class="container mt-5 d-sm-flex justify-content-center justify-content-sm-between align-items-center flex-wrap">
         <div>
